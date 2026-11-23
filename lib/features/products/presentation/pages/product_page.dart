@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:todo_crud/features/products/domain/entities/product.dart';
 import 'package:todo_crud/features/products/presentation/pages/product_details_.dialog.dart';
 
 import '../controllers/product_controller.dart';
@@ -21,7 +22,7 @@ class ProductPage extends GetView<ProductController> {
   void openEditDialog(product) {
     Get.dialog(
       ProductFormDialog(
-        product: product,
+       product : product,
       ),
     );
   }
